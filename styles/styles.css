@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f8f8;
+  color: #444;
+}
+
+h1 {
+  color: #34e;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding: 10px;
+  background-color: #444;
+  display: inline;
+}
+
+.nav li:hover {
+  background-color: #34e;
+}
+
+.nav li a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+
+#services tr:nth-child(even) {
+  background-color: #444;
+  color: #f8f8f8;
+}
+
+#services th {
+  color: #f8f8f8;
+  background-color: #34e;
+}
+
+#services th:first-child {
+  background-color: #f8f8f8;
+}
