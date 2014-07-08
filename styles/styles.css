@@ -1,18 +1,35 @@
 @import url(bootstrap.css);
+@import url(font-awesome.min.css);
 html, body { height: 100%; }
 .full-height { height: 100%; }
 td { height: 5em; }
 .basic { background-color: red; color: white; }
 .pro   { background-color: green; color: white; }
 .ultra { background-color: blue; color: white; }
+.section-title { margin-bottom: 10%; }
+#nav-main {
+  color: white;
+}
+#nav-main a {
+  font-size: 24px;
+  color: white;
+}
 #intro {
   background-image: url(../images/beach.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+#services {
+}
 #intro-jumbo {
   margin-top: 10%;
   margin-bottom: 10%;
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(200, 200, 200, 0.0);
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.content-jumbo {
+  background-color: #fff;
+  height: 50%;
 }
