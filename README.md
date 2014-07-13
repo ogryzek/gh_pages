@@ -352,4 +352,12 @@ data-share="false"></div>
 ```
 
 ## Brace
-Add contact forms using [Brace](http://forms.brace.io/).
+Add contact forms using [Brace](http://forms.brace.io/).  
+  
+To add form handling functionality through Brace Forms, simply add an
+action and method to your form element  
+```html
+<form action="http://forms.brace/io/your@email.com" method="post">
+  <!-- form input here -->
+</form>
+```
