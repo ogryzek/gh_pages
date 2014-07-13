@@ -292,8 +292,64 @@ We can add them in place of a logo, for example let's add one to our nav menu. W
 ## Github Pages
 [Github pages](https://pages.github.com/) offers free hosting for your HTML/CSS and Javascript website, and can even be used with custom domains.
 ## Twitter API
-Add "Tweet" and "Follow" buttons, and personal embedded tweets using [Twitter's API](https://dev.twitter.com/docs/tfw).
+Add "Tweet" and "Follow" buttons, and personal embedded tweets using [Twitter's API](https://dev.twitter.com/docs/tfw).  
+  
+To add a Twitter "Tweet" button, there are two parts needed: The script
+that defines the functionality of the button, and an element to call the
+functionality and display a button.  
+  
+1.) The script
+```html
+<script>
+  !function(d,s,id){
+    var
+    js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+      js=d.createElement(s);
+      js.id=id;
+      js.src="https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }
+  (document,"script","twitter-wjs");
+</script>
+```
+2.) The anchor element calling the script
+```html
+<a href="https://twitter.com/share" class="twitter-share-button"
+data-lang="en">Tweet</a>
+```
 ## Facebook API
-Add Facebook [like](https://developers.facebook.com/docs/plugins/like-button) and [share](http://jsfiddle.net/subodhghulaxe/QqKKr/) buttons.
+Add Facebook [like](https://developers.facebook.com/docs/plugins/like-button) and [share](http://jsfiddle.net/subodhghulaxe/QqKKr/) buttons.  
+  
+As with most social media APIs, with Facebook, to add a like button, we need to include a
+script that defines the functionality, and an element to call the
+script.  
+  
+1.) The script
+```html
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }
+  (document, 'script', 'facebook-jssdk'));
+</script>
+```
+2.) The element containing the script. ***note***: Twitter's tweet
+button used an anchor element, and Facebook's like is contained within a
+div. As the behavior is class based, this is more a matter of personal
+preference, and either should work just as well.
+```html
+<div class="fb-like"
+data-href="https://developers.facebook.com/docs/plugins/"
+data-layout="button" data-action="like" data-show-faces="false"
+data-share="false"></div>
+```
+
 ## Brace
 Add contact forms using [Brace](http://forms.brace.io/).

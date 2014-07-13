@@ -8,7 +8,6 @@
   </head>
   <body>
   <div id="fb-root"></div>
-  <div id="fb-root"></div>
   <script>
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -19,7 +18,7 @@
     }
     (document, 'script', 'facebook-jssdk'));
 
-    !function(d,s,id){
+    (function(d,s,id){
       var js,fjs=d.getElementsByTagName(s)[0];
       if(!d.getElementById(id)){
         js=d.createElement(s);
@@ -28,7 +27,7 @@
         fjs.parentNode.insertBefore(js,fjs);
       }
     }
-    (document,"script","twitter-wjs");
+    (document,"script","twitter-wjs"));
   </script>
 
     <section class="full-height container-fluid" id="intro">
@@ -50,10 +49,10 @@
               <button type="submit" class="btn btn-default">sign up</button>
             </span>
           </div>
-              <div class="social col-md-2 col-md-offset-5">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+          <div class="social">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a><br>
                 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-            </div>
+          </div>
         </form>
       </div>
     </section>
