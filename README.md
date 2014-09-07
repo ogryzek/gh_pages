@@ -1,6 +1,6 @@
 #HTML, CSS, Bootstrap, Fontawesome, and Jekyll on Github Pages with Facebook API, Twitter API, and Brace forms  
 ## Introduction to HTML
-[HTML Elements](http://meiert.com/en/indices/html-elements/) | [Semantics(WHATWG.org)](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html) | [HTML Reference(W3.org)](http://www.w3.org/TR/html-markup/elements.html)   
+[HTML Elements](http://meiert.com/en/indices/html-elements/) | [Semantics(WHATWG.org)](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html) | [HTML Reference(W3.org)](http://www.w3.org/TR/html-markup/elements.html) | [discover devtools](http://discover-devtools.codeschool.com/) | [CodeCademy](http://www.codecademy.com/en/tracks/web) | [CodeAvengers](http://www.codeavengers.com/web/1#1.1) | [gh-pages](https://github.com/ogryzek/gh_pages) | [dash](https://dash.generalassemb.ly/)  
   
 HTML is a markup language used to format content for the web. It not only helps with the display and visualization of data, but it helps to *organize information*, making it accessible to human and web-crawler alike.  
   
